@@ -1,15 +1,17 @@
-{
-  "name": "Book",
-  "cost": 50,
-  "image": "https://picsum.photos/100/100"
-},
-{
-  "name": "Lamp",
-  "cost": 75,
-  "image": "https://picsum.photos/101/101"
-},
-{
-  "name": "Couch",
-  "cost": 200,
-  "image": "https://picsum.photos/102/102"
-}
+[
+  {
+    "name": "Book",
+    "cost": 50,
+    "image": "https://picsum.photos/100/100"
+  },
+  {
+    "name": "Lamp",
+    "cost": 75,
+    "image": "https://picsum.photos/101/101"
+  },
+  {
+    "name": "Couch",
+    "cost": 200,
+    "image": "https://picsum.photos/102/102"
+  }
+]

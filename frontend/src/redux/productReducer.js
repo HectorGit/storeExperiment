@@ -11,7 +11,7 @@ export const fetchProducts = createAsyncThunk(
 
         let payload = []
 
-        await fetch("http://localhost:3000/api/products", {mode:"cors"})
+        await fetch("http://localhost:3000/products", {mode:"cors"})
         .then((response) => response.json() )
         .then((data) => {
             payload = data
@@ -27,15 +27,10 @@ const productDataSlice = createSlice({
   reducers: {
     //this is not actually used in this module, but it helps to see the structure of the data :)
     productDataFetched(state, action) {
-      state.push({
-        productId : action.payload.productId,
-        productName : action.payload.productName,
-        productOwnerName : action.payload.productOwnerName,
-        productOwnerName : action.payload.productOwnerName,
-        Developers : action.payload.Developers,
-        scrumMasterName : action.payload.scrumMasterName,
-        startDate : action.payload.startDate,
-        methodology : action.payload.methodology
+      state.push({        
+        name: action.payload.name,
+        cost: action.payload.cost,
+        image: action.payload.image
       })
     },
   },

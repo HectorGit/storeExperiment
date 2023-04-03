@@ -1,10 +1,10 @@
 {
-  "name": "bcgov_products",
+  "name": "StoreExperiment",
   "version": "1.0.0",
-  "description": "BC GOV Products API",
+  "description": "Store Experiment API",
   "main": "bcgov_products.js",
   "scripts": {
-    "start": "node bcgov_products.js"
+    "start": "node store_experiment.js"
   },
   "repository": {
     "type": "git",
