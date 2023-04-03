@@ -1,25 +1,10 @@
 
 import ItemCard from '../components/itemCard';
+import { useSelector} from 'react-redux'
 
 function StorePage() {
 
-  const listings = [
-    {
-      name: 'Book',
-      cost: 50,
-      image: 'https://picsum.photos/100/100',
-    },
-    {
-      name: 'Lamp',
-      cost: 75,
-      image: 'https://picsum.photos/101/101',
-    },
-    {
-      name: 'Couch',
-      cost: 200,
-      image: 'https://picsum.photos/102/102',
-    }
-  ];
+  const listings = useSelector(store => store.product.products)
 
   return (
     <>

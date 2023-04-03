@@ -6,7 +6,7 @@ import App from './App';
 // import {fetchProducts} from './redux/productReducer'
 
 //dispatch the fetchProducts() before our root component renders
-// productStore.dispatch(fetchProducts())
+productStore.dispatch(fetchProducts())
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
